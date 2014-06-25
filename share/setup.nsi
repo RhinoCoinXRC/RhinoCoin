@@ -68,12 +68,7 @@ Section -Main SEC0000
     SetOverwrite on
     File ../release/RhinoCoin-qt.exe
     File /oname=license.txt ../COPYING
-    File /oname=readme.txt ../doc/README_windows.txt
-    SetOutPath $INSTDIR\daemon
-    File ../src/RhinoCoind.exe
-    SetOutPath $INSTDIR\src
-    File /r /x *.exe /x *.o ../src\*.*
-    SetOutPath $INSTDIR
+    File /oname=readme.txt ../doc/README
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
     # Remove old wxwidgets-based-RhinoCoin executable and locales:
