@@ -33,6 +33,7 @@ script: |
   #
   cd RhinoCoin
   mkdir -p build
+  mkdir -p release
   mkdir -p $OUTDIR/src
   export PATH=$STAGING/host/bin:$PATH
   mkdir -p $OUTDIR/src
