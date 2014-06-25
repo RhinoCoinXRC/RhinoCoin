@@ -16,18 +16,18 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 # UNCOMMENT THIS SECTION TO BUILD ON WINDOWS
 # Change paths if needed, these use the foocoin/deps.git repository locations
 
-windows:LIBS += -lshlwapi
-LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
-LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
-windows:LIBS += -lws2_32 -lole32 -loleaut32 -luuid -lgdi32
-LIBS += -lboost_system-mgw46-mt-sd-1_54 -lboost_filesystem-mgw46-mt-sd-1_54 -lboost_program_options-mgw46-mt-sd-1_54 -lboost_thread-mgw46-mt-sd-1_54
-BOOST_LIB_SUFFIX=-mgw46-mt-sd-1_54
-BOOST_INCLUDE_PATH=C:/deps/boost46-54
-BOOST_LIB_PATH=C:/deps/boost46-54/stage/lib
-BDB_INCLUDE_PATH=c:/deps/db/build_unix
-BDB_LIB_PATH=c:/deps/db/build_unix
-OPENSSL_INCLUDE_PATH=c:/deps/ssl/include
-OPENSSL_LIB_PATH=c:/deps/ssl
+#windows:LIBS += -lshlwapi
+#LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
+#LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
+#windows:LIBS += -lws2_32 -lole32 -loleaut32 -luuid -lgdi32
+#LIBS += -lboost_system-mgw46-mt-sd-1_54 -lboost_filesystem-mgw46-mt-sd-1_54 -lboost_program_options-mgw46-mt-sd-1_54 -lboost_thread-mgw46-mt-sd-1_54
+#BOOST_LIB_SUFFIX=-mgw46-mt-sd-1_54
+#BOOST_INCLUDE_PATH=C:/deps/boost46-54
+#BOOST_LIB_PATH=C:/deps/boost46-54/stage/lib
+#BDB_INCLUDE_PATH=c:/deps/db/build_unix
+#BDB_LIB_PATH=c:/deps/db/build_unix
+#OPENSSL_INCLUDE_PATH=c:/deps/ssl/include
+#OPENSSL_LIB_PATH=c:/deps/ssl
 
 # use: qmake "RELEASE=1"
 contains(RELEASE, 1) {
